@@ -50,6 +50,3 @@ while game_running:
       except ValueError:
              print("This character is not a number, try again")
       
-      except ValueError:
-             print("This character is not a number, try again")
-      
