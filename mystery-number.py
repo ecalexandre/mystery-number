@@ -1,7 +1,7 @@
 #Number game program
 import random
 
-r = input("Enter your name to start the game (Press enter to finish): ")
+name = input("Enter your name to start the game (Press enter to finish): ")
 
 print("*************************************************************************************************************")
 print(f"Hello {r}! Welcome to the Guess The Number challenge! The game is about picking a number between 1 to 100.")
@@ -47,6 +47,9 @@ while game_running:
              print("Wrong number, try again")
              print("Hint : Pssss, the correct number is above that")   
 
+      except ValueError:
+             print("This character is not a number, try again")
+      
       except ValueError:
              print("This character is not a number, try again")
       
