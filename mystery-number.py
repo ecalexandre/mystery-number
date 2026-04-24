@@ -4,7 +4,7 @@ import random
 name = input("Enter your name to start the game (Press enter to finish): ")
 
 print("*************************************************************************************************************")
-print(f"Hello {r}! Welcome to the Guess The Number challenge! The game is about picking a number between 1 to 100.")
+print(f"Hello {name}! Welcome to the Guess The Number challenge! The game is about picking a number between 1 to 100.")
 print("The game will continue as long as you did not get the right number!")
 print("If you get the right number, you will win and receive the amount of tries it took you to win!")
 print("So here are the rules:")
