@@ -1,25 +1,16 @@
-<<<<<<< HEAD
 #mystery number game
-=======
 #Number game program
->>>>>>> 006a815ee0bae2e5e24b619eef7138a1cbe3e5a8
 import random
 
 name = input("Enter your name to start the game (Press enter to finish): ")
 
-<<<<<<< HEAD
 print("*" * 109)
 print(f"Hello {name}! Welcome to the Guess The Number challenge! The game is about picking a number between 1 to 1000.")
-=======
-print("*************************************************************************************************************")
-print(f"Hello {name}! Welcome to the Guess The Number challenge! The game is about picking a number between 1 to 100.")
->>>>>>> 006a815ee0bae2e5e24b619eef7138a1cbe3e5a8
 print("The game will continue as long as you did not get the right number!")
 print("If you get the right number, you will win and receive the amount of tries it took you to win!")
 print("So here are the rules:")
 print("1. Do not put a character that is not a number because you will never get the right answer by doing it.")
 print("2. If you ever put a number that is too high or too low, I am gonna give you hints to win easily.")
-<<<<<<< HEAD
 print("Good luck!") 
 print("*" * 109) #Welcome message + explaining the game   
 
@@ -27,16 +18,7 @@ secret_number = random.randint(1,1000) #Random number between 1 to 100 chosen by
 game_running = True
 attempts = 0
 
-=======
-print("Good luck!") #Welcome message + explaining the game   
-print("*************************************************************************************************************")
 
-secret_number = random.randint(1,100) #Random number between 1 to 50 chosen by the program that the user has to input 
-game_running = True
-attempts = 0
-
-
->>>>>>> 006a815ee0bae2e5e24b619eef7138a1cbe3e5a8
 while game_running:
       attempts += 1
       if game_running == False:
@@ -46,46 +28,25 @@ while game_running:
       try:
         val = int(user_input)
         if val == secret_number:
-<<<<<<< HEAD
            print(f"Correct {name}! You got the number!")
            print(f"Amount of attempts to win: {attempts}")
            game_running = False  
         
-        elif val > secret_number and val <= 1000 and val != secret_number: 
+        elif val > secret_number and val <= 1000: 
              print("Wrong number, try again")
              print("Hint : Psss, the correct number is below that") 
 
-        elif val >= 1000 and val != secret_number:
-=======
-           print("Correct! You got the number!")
-           print(f"Amount of tries to win: {attempts}")
-           game_running = False
-        
-        elif val > secret_number and val <= 100 and val != secret_number: 
+        elif val > 1000:
              print("Wrong number, try again")
-             print("Hint : Psss, the correct number is below that") 
-
-        elif val >= 100 and val != secret_number:
->>>>>>> 006a815ee0bae2e5e24b619eef7138a1cbe3e5a8
-             print("Wrong number, try again")
-             print("This number is too high, it has to be between 1 and 100")
+             print("This number is too high, it has to be between 1 and 1000")
 
         elif val < 1:
              print("Wrong number, try again")
-             print("This number is too low, it has to be between 1 and 100")
+             print("This number is too low, it has to be between 1 and 1000")
 
-<<<<<<< HEAD
-        elif val < secret_number and val < 1000 and val > 1 and val != secret_number:             
-=======
-        elif val < secret_number and val < 100 and val > 1 and val != secret_number:             
->>>>>>> 006a815ee0bae2e5e24b619eef7138a1cbe3e5a8
+        elif val < secret_number and val < 1000 and val > 1:             
              print("Wrong number, try again")
              print("Hint : Pssss, the correct number is above that")   
 
       except ValueError:
              print("This character is not a number, try again")
-<<<<<<< HEAD
-      
-=======
-      
->>>>>>> 006a815ee0bae2e5e24b619eef7138a1cbe3e5a8
